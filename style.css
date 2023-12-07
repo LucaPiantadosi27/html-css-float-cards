@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* reset */
+    border: 1px solid red;
+}
+
+body{
+    font-family:'Nunito', sans-serif;
+}
+    
+/* imposto lo stile dei titoli */
+
+h1{
+    font-weight: 600;
+    height: 50px;
+    text-align: center;
+    color: #ED3979;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    display: inline-block;
+    vertical-align: top;
+    }
+
+h4{
+    width: 100px;
+    display: inline-block;
+    
+}
+/* inizio sezione down */
+#down{
+    float: left;
+    text-align: center;
+    
+}
+
+/*  imposto lo stile float ai div container e agli altri due contenuti in esso*/
+.container{
+    width: calc(100% / 3);
+    float: left;
+    text-align: center;
+}
+
+
+.img{
+    width: calc(100% / 3);
+    float: left;
+    text-align: center;
+ 
+}
+
+.peapole{
+    width: calc(100% / 3);
+    float: left;
+    text-align: center;
+
+}
