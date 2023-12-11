@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* reset */
-    border: 1px solid red;
+    /* reset 
+    border: 1px solid red;*/
 }
 
 body{
@@ -17,27 +17,35 @@ h1{
     height: 50px;
     text-align: center;
     color: #ED3979;
+    margin-bottom: 50px;
 }
 
 h2{
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     
 }
 
 h3{
-    display: inline-block;
-    vertical-align: top;
+    
+    float: left;
     font-weight: bolder;
     }
 
 h4{
+    float: left;
     width: 100px;
     display: inline-block;
     
 }
+a{
+    float: left;
+}
+
 /* inizio sezione down */
 #down{
+    padding-left: 100px;
+    padding-right: 100px;
     float: left;
     text-align: center;
     
@@ -45,21 +53,35 @@ h4{
 
 /*  imposto lo stile float ai div container e agli altri due contenuti in esso*/
 .container{
+   
+    margin-top: 50px;
+    height: 140px;
     background-color:#0F0E17;
     width: calc(100% / 3);
-    float: left;
     text-align: center;
 }
 
+#down .container{
+    float: left;
+}
 
-.img{
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.imag{
     
-    background-size:  cover;
     width: calc(100% / 3);
     float: left;
     text-align: center;
     
 
+}
+
+img{
+    height: 140px;
 }
 
 .peapole{
@@ -70,7 +92,7 @@ h4{
 }
 
 .description{
-    margin left: 15px;
+    margin-left: 40px;
     color: white;
     width: calc(100% / 3);
     float: left;
