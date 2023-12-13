@@ -1,101 +1,108 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* reset 
-    border: 1px solid red;*/
 }
+/*  regola di reset */
 
-body{
-    font-family:'Nunito', sans-serif;
-}
-    
-/* imposto lo stile dei titoli */
 
-h1{
-    font-weight: 600;
-    height: 50px;
-    text-align: center;
-    color: #ED3979;
-    margin-bottom: 50px;
-}
-
-h2{
-    text-align: center;
-    margin-bottom: 50px;
-    
-}
-
-h3{
-    
-    float: left;
-    font-weight: bolder;
-    }
-
-h4{
-    float: left;
-    width: 100px;
-    display: inline-block;
-    
-}
-a{
-    float: left;
-}
-
-/* inizio sezione down */
-#down{
-    padding-left: 100px;
-    padding-right: 100px;
-    float: left;
-    text-align: center;
-    
-}
-
-/*  imposto lo stile float ai div container e agli altri due contenuti in esso*/
-.container{
-   
-    margin-top: 50px;
-    height: 140px;
-    background-color:#0F0E17;
-    width: calc(100% / 3);
-    text-align: center;
-}
-
-#down .container{
-    float: left;
-}
-
-.clearfix::after{
-    content: "";
+.clearfix::after {
+    content: '';
     display: table;
     clear: both;
 }
+/* utilizzo clearfix  per gestire gli elementi figlio all'interno del conteiner */
 
-.imag{
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {
+
+    max-width: 1366px;
     
-    width: calc(100% / 3);
-    float: left;
+   
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 40px 10px 20px;
+
     text-align: center;
-    
-
 }
 
-img{
-    height: 140px;
+h1 {
+    margin-bottom: 60px;
+
+    color: #E5316F;
 }
 
-.peapole{
-    width: calc(100% / 3);
+
+/*  inizio sezione cards */
+
+.card {
     float: left;
-    text-align: center;
+    width: calc(100% / 3);
 
-}
+    padding: 20px;
 
-.description{
-    margin-left: 40px;
     color: white;
-    width: calc(100% / 3);
-    float: left;
-    text-align: center;
-    
 }
+
+.card:nth-child(3n + 1) {
+    padding-left: 0;
+}
+
+.card:nth-child(3n) {
+    padding-right: 0;
+}
+
+
+
+.card .card-inner {
+    
+    background-color: #0f0e17;
+    
+
+    box-shadow: 8px 8px 12px rgba(0,0,0, 0.2);
+}
+
+.card .card-image {
+
+    float: left;
+
+    margin-right: 16px;
+}
+
+.card .card-image img {
+    display: block;
+
+    height: 120px;
+    width: auto;
+}
+
+
+.card .card-text {
+    text-align: left;
+
+    padding: 16px 0;
+}
+
+.card .card-text > * {
+    display: block;
+
+    margin-bottom: 0.4em;
+}
+
+.card .card-text strong {
+    text-transform: uppercase;
+}
+
+.card .card-text a {
+    color: #26d9f8;
+    text-decoration: none;
+}
+
+
+/* fine sezione cards */
